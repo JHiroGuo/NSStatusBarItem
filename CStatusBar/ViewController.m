@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "JHGlobalver.h"
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -23,5 +23,21 @@
     // Update the view, if already loaded.
 }
 
+- (IBAction)StatAnimation:(NSButton *)sender
+{
+    [[JHGlobalver sharedSingleton]startAnimating];
+}
+- (IBAction)StopAnimation:(NSButton *)sender
+{
+    [[JHGlobalver sharedSingleton]stopAnimating];
+    NSString *latex = @"y = \sum _ { b } ^ { a } x ^ { 2 }";
+    NSURL *path = [NSURL URLWithString:@"file:///Users/gjh/Library/Caches/com.snip.gjh/tex2png--20.png"];
+ 
+    [[JHGlobalver sharedSingleton]showPopoverWithImagePath:path andLatex:latex];
+    
+    
+}
 
+- (IBAction)imageView:(NSImageView *)sender {
+}
 @end

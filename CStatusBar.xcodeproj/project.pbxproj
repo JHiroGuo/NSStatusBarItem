@@ -12,6 +12,10 @@
 		3B26A62A222F66D600729622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B26A629222F66D600729622 /* Assets.xcassets */; };
 		3B26A62D222F66D600729622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B26A62B222F66D600729622 /* Main.storyboard */; };
 		3B26A630222F66D600729622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B26A62F222F66D600729622 /* main.m */; };
+		3B26A63A222F6D8100729622 /* GUIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B26A639222F6D8100729622 /* GUIActivityIndicatorView.m */; };
+		3B26A640222F719B00729622 /* JHGlobalver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B26A63F222F719B00729622 /* JHGlobalver.m */; };
+		3B26A651222FAA2500729622 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B26A64F222FAA2500729622 /* PopViewController.m */; };
+		3B26A652222FAA2500729622 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B26A650222FAA2500729622 /* PopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,13 @@
 		3B26A62E222F66D600729622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B26A62F222F66D600729622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B26A631222F66D600729622 /* CStatusBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CStatusBar.entitlements; sourceTree = "<group>"; };
+		3B26A638222F6D8100729622 /* GUIActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIActivityIndicatorView.h; sourceTree = "<group>"; };
+		3B26A639222F6D8100729622 /* GUIActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIActivityIndicatorView.m; sourceTree = "<group>"; };
+		3B26A63E222F719B00729622 /* JHGlobalver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHGlobalver.h; sourceTree = "<group>"; };
+		3B26A63F222F719B00729622 /* JHGlobalver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHGlobalver.m; sourceTree = "<group>"; };
+		3B26A64E222FAA2500729622 /* PopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PopViewController.h; path = StatusBar/PopViewController.h; sourceTree = "<group>"; };
+		3B26A64F222FAA2500729622 /* PopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PopViewController.m; path = StatusBar/PopViewController.m; sourceTree = "<group>"; };
+		3B26A650222FAA2500729622 /* PopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PopViewController.xib; path = StatusBar/PopViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +68,12 @@
 		3B26A622222F66D600729622 /* CStatusBar */ = {
 			isa = PBXGroup;
 			children = (
+				3B26A63E222F719B00729622 /* JHGlobalver.h */,
+				3B26A63F222F719B00729622 /* JHGlobalver.m */,
+				3B26A64E222FAA2500729622 /* PopViewController.h */,
+				3B26A64F222FAA2500729622 /* PopViewController.m */,
+				3B26A650222FAA2500729622 /* PopViewController.xib */,
+				3B26A637222F6D7A00729622 /* StatusBar */,
 				3B26A623222F66D600729622 /* AppDelegate.h */,
 				3B26A624222F66D600729622 /* AppDelegate.m */,
 				3B26A626222F66D600729622 /* ViewController.h */,
@@ -68,6 +85,15 @@
 				3B26A631222F66D600729622 /* CStatusBar.entitlements */,
 			);
 			path = CStatusBar;
+			sourceTree = "<group>";
+		};
+		3B26A637222F6D7A00729622 /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				3B26A638222F6D8100729622 /* GUIActivityIndicatorView.h */,
+				3B26A639222F6D8100729622 /* GUIActivityIndicatorView.m */,
+			);
+			path = StatusBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B26A652222FAA2500729622 /* PopViewController.xib in Resources */,
 				3B26A62A222F66D600729622 /* Assets.xcassets in Resources */,
 				3B26A62D222F66D600729622 /* Main.storyboard in Resources */,
 			);
@@ -140,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B26A651222FAA2500729622 /* PopViewController.m in Sources */,
+				3B26A640222F719B00729622 /* JHGlobalver.m in Sources */,
 				3B26A628222F66D600729622 /* ViewController.m in Sources */,
 				3B26A630222F66D600729622 /* main.m in Sources */,
 				3B26A625222F66D600729622 /* AppDelegate.m in Sources */,
+				3B26A63A222F6D8100729622 /* GUIActivityIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +297,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CStatusBar/CStatusBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2HU95337PZ;
@@ -282,7 +311,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CStatusBar/CStatusBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2HU95337PZ;
